@@ -1,4 +1,3 @@
-package Praktikum.Jobsheet2;
 
 public class Buku07 {
     String judul, pengarang;
@@ -19,6 +18,7 @@ public class Buku07 {
         judul = jd;
         pengarang = pg;
     }
+    
     void tampilInformasi() {
         System.out.println("Judul: " + judul);
         System.out.println("Pengarang: " + pengarang);
