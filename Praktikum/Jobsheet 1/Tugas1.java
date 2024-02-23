@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Tugas1 {
     public static void main(String[] args) {
         String[] KODE = {"B", "D", "F", "H", "K", "L", "N", "P", "R", "T"};
