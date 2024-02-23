@@ -1,3 +1,5 @@
+package Praktikum.Jobsheet2;
+
 public class Buku07 {
     String judul, pengarang;
     int halaman, stok, harga;
