@@ -9,7 +9,7 @@ public class ArrayOfObject {
 
         for (int i = 0;  i<rectangleArray.length; i++){
             rectangleArray[i] = new Rectangle();
-            System.out.println("Rectangle : "+i);
+            System.out.println("Rectangle "+i);
 
             System.out.println("Input lenght : ");
             rectangleArray[i].length = sc.nextInt();
@@ -19,7 +19,7 @@ public class ArrayOfObject {
         }
 
         for (int i = 0; i < rectangleArray.length; i++) {
-            System.out.println("Rectangle -" + i);
+            System.out.println("Rectangle " + i);
             System.out.println("lenght: " + rectangleArray[i].width + ", Lebar: " +rectangleArray[i].length);
         }    
     }
