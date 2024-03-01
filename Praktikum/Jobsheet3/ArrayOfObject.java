@@ -15,6 +15,7 @@ public class ArrayOfObject {
             rectangleArray[i].length = sc.nextInt();
 
             System.out.println("Input width : ");
+            rectangleArray[i].length = sc.nextInt();
         }
 
         for (int i = 0; i < rectangleArray.length; i++) {
