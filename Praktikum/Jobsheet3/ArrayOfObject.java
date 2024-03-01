@@ -15,12 +15,12 @@ public class ArrayOfObject {
             rectangleArray[i].length = sc.nextInt();
 
             System.out.println("Input width : ");
-            rectangleArray[i].length = sc.nextInt();
+            rectangleArray[i].width = sc.nextInt();
         }
 
         for (int i = 0; i < rectangleArray.length; i++) {
             System.out.println("Rectangle " + i);
-            System.out.println("lenght: " + rectangleArray[i].width + ", Lebar: " +rectangleArray[i].length);
+            System.out.println("lenght: " + rectangleArray[i].width + ", width: " +rectangleArray[i].length);
         }    
     }
 }
