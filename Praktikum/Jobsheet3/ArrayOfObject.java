@@ -1,22 +1,25 @@
 package Praktikum.Jobsheet3;
+import java.util.Scanner;
+
 public class ArrayOfObject {
     public static void main(String[] args) {
-        Rectangle[] rectangleArray = new Rectangle[3];
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input how many Rectangle array: ");
+        Rectangle[] rectangleArray = new Rectangle[sc.nextInt()];
 
-        rectangleArray[0] = new Rectangle();
-        rectangleArray[0].length = 110;
-        rectangleArray[0].width = 30;
+        for (int i = 0;  i<rectangleArray.length; i++){
+            rectangleArray[i] = new Rectangle();
+            System.out.println("Rectangle : "+i);
 
-        rectangleArray[1] = new Rectangle();
-        rectangleArray[1].length = 80;
-        rectangleArray[1].width = 40;
+            System.out.println("Input lenght : ");
+            rectangleArray[i].length = sc.nextInt();
 
-        rectangleArray[2] = new Rectangle();
-        rectangleArray[2].length = 100;
-        rectangleArray[2].width = 20;
+            System.out.println("Input width : ");
+        }
 
-        System.out.println("First rectangle, width"+ rectangleArray[0].width+ "lenght: "+ rectangleArray[0].length);
-        System.out.println("Second rectangle, width"+ rectangleArray[1].width+ "lenght: "+ rectangleArray[1].length);
-        System.out.println("Third rectangle, width"+ rectangleArray[2].width+ "lenght: "+ rectangleArray[2].length);
+        for (int i = 0; i < rectangleArray.length; i++) {
+            System.out.println("Rectangle -" + i);
+            System.out.println("lenght: " + rectangleArray[i].width + ", Lebar: " +rectangleArray[i].length);
         }    
+    }
 }
