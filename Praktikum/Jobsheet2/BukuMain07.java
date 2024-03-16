@@ -19,9 +19,9 @@ public class BukuMain07 {
         bk1.hitungHargaBayar();
 
         System.out.println("======================================================");
-        Buku07 bk2 =  new Buku07("Arifureta Vol.1", "Ryo Shirakome", 420, 100, 275000);
-        bk2.terjual(24);
-        bk2.tampilInformasi();
+        Buku07 bkCharel =  new Buku07("Arifureta Vol.1", "Ryo Shirakome", 420, 100, 275000);
+        bkCharel.terjual(24);
+        bkCharel.tampilInformasi();
         System.out.println("======================================================");
     }
 }
