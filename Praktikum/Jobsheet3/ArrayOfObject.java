@@ -21,6 +21,6 @@ public class ArrayOfObject {
         for (int i = 0; i < rectangleArray.length; i++) {
             System.out.println("Rectangle " + i);
             System.out.println("lenght: " + rectangleArray[i].width + ", width: " +rectangleArray[i].length);
-        }    
+        }
     }
 }
