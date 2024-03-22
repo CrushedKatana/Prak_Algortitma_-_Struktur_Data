@@ -9,7 +9,12 @@ public class Student {
         name = n;
         entraceYear = y;
         age = a;
-
+    }
+    void print () {
+        System.out.println("Name = "+ name);
+        System.out.println("Enterance Year = "+ entraceYear);
+        System.out.println("Age = "+age);
+        System.out.println("GPA= "+gpa);
     
     }
 }
