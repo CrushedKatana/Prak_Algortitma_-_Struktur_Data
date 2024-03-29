@@ -15,6 +15,7 @@ public class Triangle {
         return 0.5 * base*height;
     }
     public int countPerimeter(){
-        return (base*base)+(height*height);
+        return Math.sqrt(base * base + height * height);
     }
-}}
+}
+}
