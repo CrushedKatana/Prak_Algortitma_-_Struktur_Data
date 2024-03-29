@@ -9,6 +9,7 @@ public class Student {
         name = n;
         entraceYear = y;
         age = a;
+        gpa = g;
     }
     void print () {
         System.out.println("Name = "+ name);
