@@ -34,6 +34,5 @@ public class SpatialShapeNo1 {
             spatialShape[i].printVolume();
             System.out.println();
         }
-
     }
 }
