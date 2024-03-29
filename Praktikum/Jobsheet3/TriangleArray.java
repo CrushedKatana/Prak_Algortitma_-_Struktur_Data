@@ -10,7 +10,7 @@ public class TriangleArray {
         trArray[3] = new Triangle(25, 10);
 
         for(int i=0; i<4;  i++){
-            System.out.println("Triangle  " +i+ " Area = " + trArray[i].countArea()+" Perimeter = "  + trArray[i].countPerimeter());
+            System.out.println("Triangle  " +i+ " Area = " + trArray[i].countArea()+" Perimeter = "  + trArray[i].countPerimetert());
         }
         
 

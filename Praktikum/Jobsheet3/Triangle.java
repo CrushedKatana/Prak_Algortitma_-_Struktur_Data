@@ -1,22 +1,19 @@
 package Praktikum.Jobsheet3;
 
-<<<<<<< HEAD
-public class Rectangle{
-    public int length;
-    public int  width;
-=======
 public class Triangle {
-    public int  base,  height;
+    public int base;
+    public int height;
 
-    public Triangle (int b, int h){
-        base = b; 
-        height = h;
+    public Triangle(int a, int t) {
+        base = a;
+        height= t;
     }
+
     public double countArea() {
-        return 0.5 * base*height;
+        return 0.5 * base * height;
     }
-    public int countPerimeter(){
-        return (base*base)+(height*height);
+
+    public double countPerimetert() {
+        return Math.sqrt(base * height + base * height);
     }
->>>>>>> a256ac3f53decf674b0c975583fa297207a82848
 }
