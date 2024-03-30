@@ -1,3 +1,8 @@
+package Praktikum.Jobsheet5;
+
+import java.util.Scanner;
+
+public class MainSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("=================================================================");
