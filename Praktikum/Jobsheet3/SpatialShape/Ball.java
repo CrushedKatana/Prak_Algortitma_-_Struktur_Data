@@ -7,10 +7,10 @@ public class Ball {
     }
 
     public void printArea() {
-        System.out.println("ball Area: " + (4 * Math.PI * radius * radius));
+        System.out.println("Ball Area: " + (4 * Math.PI * radius * radius));
     }
 
     public void printVolume() {
-        System.out.println("Sphere Volume : " + ((4.0 / 3.0) * Math.PI * radius * radius * radius));
+        System.out.println("Ball Volume : " + ((4.0 / 3.0) * Math.PI * radius * radius * radius));
     }
 }
