@@ -12,7 +12,7 @@ public class Students {
         this.gpa= gpa;
     }
 
-    public void display(){
+    public void display() {
         System.out.println("NIM =" + nim);
         System.out.println("Name = " + name);
         System.out.println("Age = " + age);
