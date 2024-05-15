@@ -2,11 +2,13 @@ package Praktikum.Jobsheet8.Practickum1;
 
 public class Stack {
     int size, top;
-    int data[];
+    /*int data[];*/
+    Book  data[];
 
     public Stack (int size){
         this.size = size;
-        data = new int [size];
+        data = new Book [size];
+        /*data = new int [size];*/
         top = -1;
     }
 
@@ -29,7 +31,7 @@ public class Stack {
         }
     }
 
-    public void  push (int dt ){
+    public void  push (Book dt ){
         if (!isFull()){
             top++;
             data [top] = dt;
@@ -41,7 +43,7 @@ public class Stack {
 
     public void  pop (){
         if (!isEmpty()){
-            int x = data [top];
+            Book x = data [top];
             top--;
             System.out.println("Remove data : " + x);
         }
