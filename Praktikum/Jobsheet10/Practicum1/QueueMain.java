@@ -22,7 +22,7 @@ public class QueueMain {
     int choose;
     do{
         menu();
-        choo
+        se
     }
     }
 }
