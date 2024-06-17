@@ -1,4 +1,4 @@
-package Praktikum.jobsheet12.practicum1;
+package Praktikum.Jobsheet12.Praktikum1;
 
 /**
  * node

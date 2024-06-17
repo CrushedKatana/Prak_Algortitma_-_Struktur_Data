@@ -1,6 +1,4 @@
-import javax.swing.text.html.parser.Element;
-
-    public class Queue {
+public class Queue {
         int  max,  size,  front, rear;
         int Q[];
 
@@ -98,3 +96,5 @@ import javax.swing.text.html.parser.Element;
         return data;
     }
 }
+
+//test
