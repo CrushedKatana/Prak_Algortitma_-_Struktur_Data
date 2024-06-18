@@ -1,4 +1,4 @@
-package Praktikum.Jobsheet15.Praktikum1;
+package Praktikum.Jobsheet16.Praktikum1;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -10,11 +10,11 @@ public class ContohList {
         l.add("2");
         l.add("3");
         l.add("Cireng");
-        System.out.printf("Elemen 0 : %d total elemen : %d elemen terakhir : %s\n", 
+        System.out.printf("Elemen 0 : %d total elemen : %d elemen terakhir : %s\n",
                 l.get(0), l.size(), l.get(l.size() - 1));
         l.add("4");
         l.remove(0);
-        System.out.printf("Elemen 0 : %d total elemen : %d elemen terakhir : %s\n", 
+        System.out.printf("Elemen 0 : %d total elemen : %d elemen terakhir : %s\n",
                 l.get(0), l.size(), l.get(l.size() - 1));
             
         LinkedList<String> names = new LinkedList<>();

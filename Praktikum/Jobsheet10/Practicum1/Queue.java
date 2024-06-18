@@ -83,9 +83,9 @@ public class Queue {
         }else{
             data = Q[front];
             size--;
-           if (IsEmpty()){
+            if (IsEmpty()){
             front = rear = -1;
-           }else{
+            }else{
                 if(front ==  max -1){
                     front = 0;
                 }else{
@@ -97,4 +97,3 @@ public class Queue {
     }
 }
 
-//test
