@@ -1,5 +1,5 @@
 package Praktikum.Jobsheet12.Praktikum1;
 
-public class Node {
+public class DoubleLinkedListMain {
 
 }
