@@ -60,10 +60,8 @@ public class SingleLinkedList {
     }
 
     void insertAt(int index, int input) {
-
         if (index < 0) {
             index *= -1;
-
         }
         if (index == 0) {
             addFirst(input);

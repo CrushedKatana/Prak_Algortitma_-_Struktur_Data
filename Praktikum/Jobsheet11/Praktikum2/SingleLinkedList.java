@@ -61,11 +61,8 @@ public class SingleLinkedList {
     }
 
     void insertAt(int index, int input) {
-        // Node ndInput = new Node(input, null);
         if (index < 0) {
             index *= -1;
-            // System.out.println("Perbaiki logikanya!" + "kalau indeksnya -1
-            // bagaimana???");
         }
         if (index == 0) {
             addFirst(input);
