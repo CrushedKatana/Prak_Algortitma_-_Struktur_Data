@@ -1,78 +1,74 @@
 package Praktikum.Jobsheet8.Practickum1;
 
-public class Stack {
-    int size, top;
-    /*int data[];*/
-    Book  data[];
+public class Gudang07 {
+    Barang07[] tumpukan;
+    int size;
+    int top;
 
-    public Stack (int size){
+    public Gudang07(int size) {
         this.size = size;
-        data = new Book [size];
-        /*data = new int [size];*/
+        tumpukan = new Barang07[size];
         top = -1;
     }
 
-   public boolean isEmpty(){
-        if (top == -1){
+    public boolean cekKosong() {
+        if (top == -1) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
 
-
-    public boolean isFull(){
-        if (top == size -1){
+    public boolean cekPenuh() {
+        if (top == size - 1) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
 
-    public void  push (Book dt ){
-        if (!isFull()){
+    public void tambahBarang(Barang07 barang) {
+        if (!cekPenuh()) {
             top++;
-            data [top] = dt;
-        }
-        else{
-            System.out.println("Stack is full ");
+            tumpukan[top] = barang;
+            System.out.println("Barang " + barang.nama + " berhasil ditambahkan ke Gudang");
+        } else {
+            System.out.println("Gagal! Tumpukan barang di Gudang sudah penuh");
         }
     }
 
-    public void  pop (){
-        if (!isEmpty()){
-            Book x = data [top];
+    public Barang07 ambilBarang() {
+        if (!cekKosong()) {
+            Barang07 delete = tumpukan[top];
             top--;
-            System.out.println("Remove data : " + x);
-        }
-        else{
-            System.out.println("Stack is empty ");
+            System.out.println("Barang " + delete.nama + " diambil dari Gudang.");
+            return delete;
+        } else {
+            System.out.println("Tumpukan barang kosong");
+            return null;
         }
     }
 
-    public void peek(){
-        System.out.println("Top element : " + data[top]);
+    public Barang07 lihatBarangTeratas() {
+        if (!cekKosong()) {
+            Barang07 barangTerartas = tumpukan[top];
+            System.out.println("Barang teratas " + barangTerartas.nama);
+            return barangTerartas;
+        } else {
+            System.out.println("Tumpukan barang kosong");
+            return null;
+        }
     }
 
-    public void print(){
-        System.out.println("Stack content: ");
-        for (int i = top;  i >-0; i--){
-            System.out.println(data[i] + " ");
-        }
-        System.out.println("");
-    }
-
-    public void clear(){
-        if (!isEmpty()){
-            for (int i =  top; i >= 0; i--){
-            top--;
-        }
-        System.out.println("Stack is now empty");
-        }
-        else{
-            System.out.println("Failed ! Stack is still empty ");
+    public void tampilkanBarang() {
+        if (!cekKosong()) {
+            for (int i = top; i >= 0; i--) {
+                // for (int i = 0; i <= top; i++) {
+                System.out.printf("Kode %d: %s (Kategori %s)\n", tumpukan[i].kode, tumpukan[i].nama,
+                        tumpukan[i].kategori);
+            }
+        } else {
+            System.out.println("Tumpukan barang kosong");
         }
     }
 }

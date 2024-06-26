@@ -1,13 +1,13 @@
 package Praktikum.Jobsheet8.Practickum2;
 
-public class Book {
-    String title, authorName;
-    int publishedYear,  pagesAmount, price;
+public class Barang07 {
+    int kode;
+    String nama;
+    String kategori;
 
-    public Book (String tt, String nm, int yr, int pam, int pr){
-        this.title = tt;
-        this.authorName = nm;
-        this.publishedYear = pam;
-        this.price = pr;
+    public Barang07(int kode, String nama, String kategori) {
+        this.kode = kode;
+        this.nama = nama;
+        this.kategori = kategori;
     }
 }

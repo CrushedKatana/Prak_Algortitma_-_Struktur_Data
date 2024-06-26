@@ -1,99 +1,103 @@
 public class Queue {
-        int  max,  size,  front, rear;
-        int Q[];
+    int[] data;
+    int front;
+    int rear;
+    int size;
+    int max;
 
-    public Queue (int n){
-        max = n ;
-        Create();
-    }
-    public void Create(){
-        Q = new int [max];
-        size = 0 ;
-        front =  rear = -1;
+    public Queue(int n) {
+        max = n;
+        data = new int[max];
+        size = 0;
+        front = rear = -1;
     }
 
-    public boolean IsEmpty(){
-        if (size == 0){
+    public boolean isEmpty() {
+        if (size == 0) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
-    public boolean IsFull(){
-        if (size == max){
+
+    public boolean isFull() {
+        if (size == max) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
-    public void peek (){
-        if (!IsEmpty()){
-            System.out.println("The first element "+ Q[front]);
-        }else{
-            System.out.println("Queue is still empty");
+
+    public void peek() {
+        if (!isEmpty()) {
+            System.out.println("Elemen terdepan : " + data[front]);
+        } else {
+            System.out.println("Queue masih kosong");
         }
     }
-    public void print(){
-        if (!IsEmpty()){
-            System.out.println("Queue is still empty");
-        }else{
-            int i =  front;
-            while(i  !=rear){
-                System.out.println(Q[i] + " ");
-                i = (i+1) % max;
+
+    public void print() {
+        if (isEmpty()) {
+            System.out.println("Queue masih kosong");
+
+        } else {
+            int i = front;
+            while (i != rear) {
+                System.out.print(data[i] + " ");
+                i = (i + 1) % max;
             }
-            System.out.println(Q[i]+ " ");
-            System.out.println("Element amount : "+ size);
+            System.out.println(data[i] + " ");
+            System.out.println("Jumlah elemen = " + size);
         }
     }
-    public void clear(){
-        if(!IsEmpty()){
+
+    public void clear() {
+        if (!isEmpty()) {
             front = rear = -1;
             size = 0;
-            System.out.println("Queue has been cleared successfuly");
-        }else{
-            System.out.println("Queue is still empty");
+            System.out.println("Queue berhasil dikosongkan");
+        } else {
+            System.out.println("Queue masih kosong");
         }
     }
 
-    public void Enqueue(int data){
-        if(IsFull()){
-            System.out.println("Queue is already full");
-        }else{
-            if(IsEmpty()){
+    public void enqueue(int dt) {
+        if (isFull()) {
+            System.out.println("Queue overflow, Menghentikkan program. . .");
+            System.exit(0);
+        } else {
+            if (isEmpty()) {
                 front = rear = 0;
-            }else{
-                if (rear ==  max -1){
+            } else {
+                if (rear == max - 1) {
                     rear = 0;
-                }else{
+                } else {
                     rear++;
                 }
             }
-            Q[rear] =  data;
+            data[rear] = dt;
             size++;
         }
     }
 
-    public int Dequeue(){
-        int data = 0;
-        if (IsEmpty()){
-            System.out.println("Queue is still empty");
-        }else{
-            data = Q[front];
+    public int dequeue() {
+        int dt = 0;
+        if (isEmpty()) {
+            System.out.println("Queue underflow, menghintikkan program. . .");
+            System.exit(0);
+        } else {
+            dt = data[front];
             size--;
-            if (IsEmpty()){
-            front = rear = -1;
-            }else{
-                if(front ==  max -1){
+            if (isEmpty()) {
+                front = rear = -1;
+            } else {
+                if (front == max - 1) {
                     front = 0;
-                }else{
+                } else {
                     front++;
                 }
             }
         }
-        return data;
+        return dt;
     }
 }
-
