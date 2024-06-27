@@ -1,11 +1,11 @@
 package Praktikum.Jobsheet8.Practikum3;
 
-public class Postfix12 {
+public class Postfix07 {
     int n;
     int top;
     char[] stack;
 
-    public Postfix12(int total) {
+    public Postfix07(int total) {
         n = total;
         top = -1;
         stack = new char[n];

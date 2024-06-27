@@ -13,7 +13,7 @@ public class PostfixMain {
 
         int total = Q.length();
 
-        Postfix12 post = new Postfix12(total);
+        Postfix07 post = new Postfix07(total);
         P = post.konversi(Q);
         System.out.println("Postfix: " + P);
 
